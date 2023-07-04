@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+.login {
+    border-radius: 16px;
+}
+
+:root {
+    --primary-color: #48c6b7;
+    --primary-color-dark: #3ca99c;
+    --text-dark: #1f2937;
+    --text-light: #e5e7eb;
+    --extra-light: #f4f6f6;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+}
+.container_left {
+    background: url("assets/c00c65_ee65bd06021f48e98605445e0a254a51~mv2.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container_right {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--extra-light);
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 48px;
+}
+
+.header_content {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+.header_content p {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.header_content p a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+.header_content p a:hover {
+    color: var(--primary-color-dark);
+}
+
+form {
+    display: grid;
+    gap: 24px;
+}
+form input {
+    padding: 16px;
+    font-size: 16px;
+    color: var(--text-light);
+    background-color: var(--white);
+    outline: none;
+    border: 2px solid var(--text-light);
+}
+form button {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 16px;
+}
+form button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.logged_in {
+    text-align: left;
+    font-size: 14.4px;
+    color: var(--text-dark);
+}
+
+.forget_password {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 48px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.forget_password:hover {
+    color: var(--primary-color-dark);
+}
+
+.social_login_header {
+    font-size: 19.2px;
+    font-weight: 700;
+    align-items: left;
+    margin-bottom: 16px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+.social_login {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 8px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 16px;
+}
+.social_login:hover {
+    background-color: var(--white);
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.social_login i {
+    font: 20px;
+    transition: 0.3s;
+}
+.social_login span {
+    font: 16px;
+    transition: 0.3s;
+}
+.twitter_login:hover {
+   color: #25b6e7;
+}
+.facebook_login:hover {
+    color: #325594;
+ }
+ .google_login:hover {
+    color: #db4437;
+ }
+
+ .footer_bar {
+    font-size: 14.5px;
+    color: var(--text-dark);
+    text-align: center;
+    justify-content: center;
+ }
+
+ @media (width < 750px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container_left {
+        min-height: 500px;
+    }
+ }
